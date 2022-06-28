@@ -26,7 +26,7 @@ def sign_up():
                 'newsletter': form.newsletter.data, 'club': form.club.data
             }
         )
-        msg = 'Congratulations {} is now a Premium Member'.format(form.first_name.data)
+        msg = 'Congratulations {} is now a new Premium Member'.format(form.first_name.data)
         flash(msg)
         return redirect(url_for('home_page'))
     return render_template('signup.html', form=form)
