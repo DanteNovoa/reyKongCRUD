@@ -9679,3 +9679,12 @@
  .list-group-item-action .list-group-item-heading {
    color: #fff;
  }
+
+ .table {
+  counter-reset: tableCount;
+ }
+
+ .prueba:before{
+  content: counter(tableCount); 
+  counter-increment: tableCount; 
+ }

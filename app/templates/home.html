@@ -2,9 +2,11 @@
 
 {% block content %}
      <div style="background:transparent !important" class="container jumbotron">
-          <h1 class="display-3">SignUp Now !</h1>
-          <p class="lead">For A Sneak Peek</p>
+          <h1 class="display-3 text-center">SignUp Now !</h1>
+          <p class="lead">Top 100 Spotify</p>
           <br>
-          <p class="lead"> <a class="btn btn-warning btn-lg" href="{{ url_for('sign_up') }}" role="button">SignUp</a></p>
+          <div class="text-center">
+               <button type="button" class="btn btn-success" class="btn btn-secondary btn-lg text-center"> <a href="{{ url_for('spotify100') }}">Top 100 Spotify</a></button>
+          </div>          
      </div>
 {% endblock %}
